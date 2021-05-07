@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<!-- Demonstrates HTML -->
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Richie's final page quiz</title>
+
+        <script>
+        let counter = 0;
+                document.addEventListener('DOMContentLoaded', function() {
+                    let x = document.querySelectorAll('.incorrect');
+                    for(let i = 0; i<x.length; i++){
+                        x[i].addEventListener('click', function() {
+                        x[i].style.backgroundColor = "red";
+                        document.getElementById("incorrect1").innerHTML = "sorry that's incorrect";
+                        let z = document.querySelectorAll("#btn1, #btn2, #btn3, #btn4");
+                        for(let i = 0; i<z.length; i++){
+                            z[i].disabled = true;
+                        }
+                    });
+                    }
+                });
+                document.addEventListener('DOMContentLoaded', function() {
+                    let q = document.querySelectorAll('.incorrect2');
+                    for(let i = 0; i<q.length; i++){
+                        q[i].addEventListener('click', function() {
+                        q[i].style.backgroundColor = "red";
+                        document.getElementById("incorrect2").innerHTML = "sorry that's incorrect";
+                        let f = document.querySelectorAll("#btn5, #btn6, #btn7, #btn8");
+                        for(let i = 0; i<f.length; i++){
+                            f[i].disabled = true;
+
+                        }
+                    });
+                    }
+                });
+                document.addEventListener('DOMContentLoaded', function() {
+                    let q = document.querySelectorAll('.incorrect3');
+                    for(let i = 0; i<q.length; i++){
+                        q[i].addEventListener('click', function() {
+                        q[i].style.backgroundColor = "red";
+                        document.getElementById("incorrect3").innerHTML = "sorry that's incorrect";
+                        let f = document.querySelectorAll("#btn9, #btn10, #btn11, #btn12");
+                        for(let i = 0; i<f.length; i++){
+                            f[i].disabled = true;
+
+                        }
+                    });
+                    }
+                });
+                 document.addEventListener('DOMContentLoaded', function() {
+                    let m = document.querySelectorAll('.incorrect4');
+                    for(let i = 0; i<m.length; i++){
+                        m[i].addEventListener('click', function() {
+                        m[i].style.backgroundColor = "red";
+                        document.getElementById("incorrect4").innerHTML = "sorry that's incorrect";
+                        let r = document.querySelectorAll("#btn13, #btn14, #btn15, #btn16");
+                        for(let i = 0; i<r.length; i++){
+                            r[i].disabled = true;
+
+                        }
+                    });
+                    }
+                });
+                document.addEventListener('DOMContentLoaded', function() {
+                    let v = document.querySelectorAll('.incorrect5');
+                    for(let i = 0; i<v.length; i++){
+                        v[i].addEventListener('click', function() {
+                        v[i].style.backgroundColor = "red";
+                        document.getElementById("incorrect5").innerHTML = "sorry that's incorrect";
+                        let u = document.querySelectorAll("#btn17, #btn18, #btn19, #btn20");
+                        for(let i = 0; i<u.length; i++){
+                            u[i].disabled = true;
+
+                        }
+                        if(counter > 4){
+                            document.getElementById("results").innerHTML = 'Congratulations you got a '+counter+'/5! You really seem to know your stuff!';
+                        } else if(counter > 2){
+                            document.getElementById("results").innerHTML = 'Nice job you got a '+counter+'/5!';
+                        } else {
+                            document.getElementById("results").innerHTML = "You didn't do too well you only got a "+counter+"/5!";
+                        }
+                    });
+                    }
+                });
+                document.addEventListener('DOMContentLoaded', function() {
+                    let y = document.querySelectorAll('.correct');
+                    for(let i = 0; i<y.length; i++){
+                        y[i].addEventListener('click', function() {
+                        y[i].style.backgroundColor = "green";
+                        document.querySelector('#correct1').innerHTML = 'correct';
+                        let z = document.querySelectorAll("#btn1, #btn2, #btn3, #btn4");
+                        counter++;
+                        for(let i = 0; i<z.length; i++){
+                            z[i].disabled = true;
+
+
+                        }
+                    });
+                    }
+                });
+                 document.addEventListener('DOMContentLoaded', function() {
+                    let w = document.querySelectorAll('.correct2');
+                    for(let i = 0; i<w.length; i++){
+                        w[i].addEventListener('click', function() {
+                        w[i].style.backgroundColor = "green";
+                        document.getElementById("correct2").innerHTML = "correct";
+                        let f = document.querySelectorAll("#btn5, #btn6, #btn7, #btn8");
+                        counter++;
+                        for(let i = 0; i<w.length; i++){
+                            f[i].disabled = true;
+
+
+                        }
+                    });
+                    }
+                });
+                document.addEventListener('DOMContentLoaded', function() {
+                    let g = document.querySelectorAll('.correct3');
+                    for(let i = 0; i<g.length; i++){
+                        g[i].addEventListener('click', function() {
+                        g[i].style.backgroundColor = "green";
+                        document.querySelector('#correct3').innerHTML = 'correct';
+                        let h = document.querySelectorAll("#btn9, #btn10, #btn11, #btn12");
+                        counter++;
+                        for(let i = 0; i<h.length; i++){
+                            h[i].disabled = true;
+
+
+                        }
+                    });
+                    }
+                });
+                document.addEventListener('DOMContentLoaded', function() {
+                    let l = document.querySelectorAll('.correct4');
+                    for(let i = 0; i<l.length; i++){
+                        l[i].addEventListener('click', function() {
+                        l[i].style.backgroundColor = "green";
+                        document.querySelector('#correct4').innerHTML = 'correct';
+                        let c = document.querySelectorAll("#btn13, #btn14, #btn15, #btn16");
+                        counter++;
+                        for(let i = 0; i<c.length; i++){
+                            c[i].disabled = true;
+
+
+                        }
+                    });
+                    }
+                });
+                        document.addEventListener('DOMContentLoaded', function() {
+                    let b = document.querySelectorAll('.correct5');
+                    for(let i = 0; i<b.length; i++){
+                        b[i].addEventListener('click', function() {
+                        b[i].style.backgroundColor = "green";
+                        document.querySelector('#correct5').innerHTML = 'correct';
+                        let k = document.querySelectorAll("#btn17, #btn18, #btn19, #btn20");
+                        counter++;
+                        for(let i = 0; i<k.length; i++){
+                            k[i].disabled = true;
+
+                        }
+                        if(counter > 4){
+                            document.getElementById("results").innerHTML = 'Congratulations you got a '+counter+'/5! You really seem to know your';
+                        } else if(counter > 2){
+                            document.getElementById("results").innerHTML = 'Nice job you got a '+counter+'/5!';
+                        } else {
+                            document.getElementById("results").innerHTML = "You didn't do too well you only got a "+counter+"/5!";
+                        }
+                    });
+                    }
+                });
+
+        </script>
+
+
+    </head>
+    <body>
+
+        <div class="">
+            <h1 class="centered quiztext">Time to test how much you remember about me!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <hr>
+
+
+                <h3>Question 1: What is my birth date?</h3>
+                <button id="btn1" class="incorrect">March 10th 2004</button>
+                <button id="btn2" class="incorrect">March 24th 2003</button>
+                <button id="btn3" class="correct">March 16th 2004</button>
+                <button id="btn4" class="incorrect">May 4th 2003</button>
+                <h3 id="incorrect1"></h3>
+                <h3 id="correct1"></h3>
+
+                <h3>Question 2: What is my favorite hobby?</h3>
+                <button id="btn5" class="correct2">Soccer</button>
+                <button id="btn6" class="incorrect2">Fishing</button>
+                <button id="btn7" class="incorrect2">Hiking</button>
+                <button id="btn8" class="incorrect2">Cooking</button>
+                <h3 id="incorrect2"></h3>
+                <h3 id="correct2"></h3>
+
+                <h3>Question 3: What is the soccer club I play for called?</h3>
+                <button id="btn9" class="correct3">Seacoast united</button>
+                <button id="btn10" class="incorrect3">Breakers FC</button>
+                <button id="btn11" class="incorrect3">You don't play soccer</button>
+                <button id="btn12" class="incorrect3">Manchester city</button>
+                <h3 id="incorrect3"></h3>
+                <h3 id="correct3"></h3>
+
+                <h3>Question 4: What is my 5th period class?</h3>
+                <button id="btn13" class="incorrect4">Computer science</button>
+                <button id="btn14" class="correct4">Free period</button>
+                <button id="btn15" class="incorrect4">Math</button>
+                <button id="btn16" class="incorrect4">Chemistry</button>
+                <h3 id="incorrect4"></h3>
+                <h3 id="correct4"></h3>
+
+                <h3>Question 5: What is my favorite coding language</h3>
+                <button id="btn17" class="incorrect5">C</button>
+                <button id="btn18" class="incorrect5">SQL</button>
+                <button id="btn19" class="incorrect5">Javascript</button>
+                <button id="btn20" class="correct5">python</button>
+                <h3 id="incorrect5"></h3>
+                <h3 id="correct5"></h3>
+            </div>
+        </div>
+        <h2 class="centered" id="results"></h2>
+        <input type="button" onclick="location.href='https://ide-0c1b8ede811a48108d7edc2ff843fd1e-8080.cs50.ws/page2.html';" value="Go back"/>
+        <input type="button" onclick="location.href='https://ide-0c1b8ede811a48108d7edc2ff843fd1e-8080.cs50.ws/page1.html';" value="Go back to the first slide"/>
+        <input type="button" onclick="location.href='https://ide-0c1b8ede811a48108d7edc2ff843fd1e-8080.cs50.ws/index.html';" value="Go back to the homepage"/>
+          </body>
+</html>
